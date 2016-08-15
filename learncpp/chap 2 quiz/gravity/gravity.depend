@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1455527347 source:c:\users\taimur\desktop\codeblocks\learncpp\chap 2 quiz\constants.h
+
+1455529215 source:c:\users\taimur\desktop\codeblocks\learncpp\chap 2 quiz\gravity\main.cpp
+	<iostream>
+	"constants.h"
+
+1455527555 c:\users\taimur\desktop\codeblocks\learncpp\chap 2 quiz\gravity\constants.h
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1463981419 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\fstream\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

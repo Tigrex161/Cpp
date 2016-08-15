@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
+int main()
+{
+
+ for(int i =0; i<=200;++i)
+ {
+     cout << i << " " << char(i) << endl;
+ }
+return 0;
+}
+
+

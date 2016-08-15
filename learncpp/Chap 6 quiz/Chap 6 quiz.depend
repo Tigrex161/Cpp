@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1470828955 source:c:\users\taimur\desktop\codeblocks\learncpp\chap 6 quiz\main.cpp
+	<iostream>
+	"header.h"
+	<string>
+	<utility>
+
+1470828017 c:\users\taimur\desktop\codeblocks\learncpp\chap 6 quiz\header.h
+

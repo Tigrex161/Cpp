@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1466502972 source:c:\users\taimur\desktop\codeblocks\learncpp\dma\main.cpp
+	<iostream>
+	<string>
+	<utility>
+

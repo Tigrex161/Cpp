@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1464763117 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\project\main.cpp
+	<iostream>
+	<string>
+	<cstdlib>
+	"fwddecs.h"
+
+1464714894 c:\users\taimur\desktop\codeblocks\algorithms and computing lab\project\fwddecs.h
+
+1464778959 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\project\functions.cpp
+	<iostream>
+	<cstdlib>
+	<string>
+	"fwddecs.h"
+	"global.h"
+
+1464762140 c:\users\taimur\desktop\codeblocks\algorithms and computing lab\project\global.h
+	<string>
+

@@ -1,0 +1,9 @@
+int j,n
+
+switch (j)
+{
+    case (j==3 || j == 5) : n = 6; break;
+    case (j == 4 || j == 8) : n =9; break;
+    case (j == 2) : n = 8; break;
+    default : n =0;
+}

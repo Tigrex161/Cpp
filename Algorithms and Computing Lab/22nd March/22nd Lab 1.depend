@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1456133946 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\main.cpp
+	<iostream>
+	"function.h"
+
+1456131062 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task6.cpp
+	<iostream>
+
+1456131688 c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\function.h
+
+1456131062 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task7.cpp
+	<iostream>
+	<cmath>
+
+1456131062 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task8.cpp
+	<iostream>
+
+1456133898 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task1.cpp
+	<iostream>
+
+1456131062 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task2.cpp
+	<iostream>
+
+1456511865 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\22nd lab 1\task3.cpp
+	<iostream>
+

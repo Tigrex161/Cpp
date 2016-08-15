@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1458566259 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\loops\main.cpp
+	<iostream>
+	<cmath>
+
+1458566259 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\loops\ascii.cpp
+	<iostream>
+
+1458539081 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\loops\division.cpp
+	<iostream>
+
+1458540939 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\loops\addition.cpp
+	<iostream>
+
+1458564309 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\loops\calc.cpp
+	<iostream>
+

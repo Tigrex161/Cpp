@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1456841141 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\main.cpp
+	<iostream>
+	"fwddecs.h"
+	"constants.h"
+
+1456723222 c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\fwddecs.h
+
+1456723222 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\greaterthan100.cpp
+	<iostream>
+
+1456721639 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\passorfail.cpp
+	<iostream>
+
+1456721773 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\quarterbill.cpp
+	<iostream>
+
+1456723322 c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\constants.h
+
+1456841237 source:c:\users\taimur\desktop\codeblocks\algorithms and computing lab\lab28feb\finaid.cpp
+	<iostream>
+	"constants.h"
+

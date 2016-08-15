@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1462527657 source:c:\users\taimur\desktop\codeblocks\learncpp\control flow\main.cpp
+	<iostream>
+	"constants.h"
+	<cmath>
+
+1462519932 c:\users\taimur\desktop\codeblocks\learncpp\control flow\constants.h
+
