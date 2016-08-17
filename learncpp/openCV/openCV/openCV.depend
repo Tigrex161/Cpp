@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1471378212 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/openCV/openCV/main.cpp
+	<cv.h>
+	<cxcore.h>
+	<highgui.h>
+
+1461162079 /home/taihim/opencv-2.4.13/include/opencv/cv.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+	"opencv2/imgproc/imgproc_c.h"
+	"opencv2/imgproc/imgproc.hpp"
+	"opencv2/video/tracking.hpp"
+	"opencv2/features2d/features2d.hpp"
+	"opencv2/flann/flann.hpp"
+	"opencv2/calib3d/calib3d.hpp"
+	"opencv2/objdetect/objdetect.hpp"
+	"opencv2/legacy/compat.hpp"
+	"opencv2/core/internal.hpp"
+
+1461162079 /home/taihim/opencv-2.4.13/include/opencv/cxcore.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+
+1461162079 /home/taihim/opencv-2.4.13/include/opencv/highgui.h
+	"opencv2/core/core_c.h"
+	"opencv2/core/core.hpp"
+	"opencv2/highgui/highgui_c.h"
+	"opencv2/highgui/highgui.hpp"
+
