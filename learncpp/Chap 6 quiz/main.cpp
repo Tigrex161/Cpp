@@ -96,15 +96,126 @@ int main()
 }*/
 
 
-int main()
+/*void printChar(const char *str)
 {
+    while (*str != '\0')
+    {
+
+        cout << *str;
+
+        *str++;
+
+    }
 
 }
 
 
+int main()
+{
+    printChar("Hello World!");
+}*/
+
+
+enum CardRank{
+                Rank_2,
+                Rank_3,
+                Rank_4,
+                Rank_5,
+                Rank_6,
+                Rank_7,
+                Rank_8,
+                Rank_9,
+                Rank_10,
+                Rank_Jack,
+                Rank_King,
+                Rank_Queen,
+                Rank_Ace
+                //Max_Ranks
+};
+
+enum CardSuit{
+
+                Suit_Club,
+                Suit_Heart,
+                Suit_Diamond,
+                Suit_Spade
+                //Max_Suits
+};
+
+
+struct Card{
+
+    CardRank rk;
+    CardSuit su;
+};
 
 
 
+void printCard(const Card &card);
+
+
+int main(){
+
+
+
+Card card;
+card.rk = Rank_Jack;
+card.su = Suit_Spade;
+
+printCard(card);
+
+
+return 0;
+}
+
+
+
+void printCard(const Card &card)
+{
+switch(card.rk)
+
+{
+case Rank_2:     {cout << "2" ;break; }
+
+case Rank_3:     {cout << "3" ;break; }
+
+case Rank_4:     {cout << "4" ;break; }
+
+case Rank_5:     {cout << "5" ;break; }
+
+case Rank_6:     {cout << "6" ;break; }
+
+case Rank_7:     {cout << "7" ;break; }
+
+case Rank_8:     {cout << "8" ;break; }
+
+case Rank_9:     {cout << "9" ;break; }
+
+case Rank_10:    {cout << "10";break; }
+
+case Rank_Jack:  {cout << "J" ;break; }
+
+case Rank_King:  {cout << "K" ;break; }
+
+case Rank_Queen: {cout << "Q" ;break; }
+
+case Rank_Ace:   {cout << "A" ;break; }
+
+}
+
+
+switch(card.su)
+
+{
+case Suit_Club:    {cout << "C";break;}
+
+case Suit_Diamond: {cout << "D";break;}
+
+case Suit_Heart:   {cout << "H";break;}
+
+case Suit_Spade:   {cout << "S";break;}
+}
+}
 
 
 
