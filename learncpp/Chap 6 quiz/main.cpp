@@ -2,6 +2,7 @@
 #include "header.h"
 #include <string>
 #include <utility>
+#include <array>
 using namespace std;
 
 /*enum playerItems
@@ -152,18 +153,32 @@ struct Card{
 
 
 void printCard(const Card &card);
-
+void printDeck(const array<Card,52> &deck);
 
 int main(){
 
 
 
-Card card;
-card.rk = Rank_Jack;
-card.su = Suit_Spade;
 
-printCard(card);
+array <Card,52> deck;
 
+int card=0;
+for (int i = 0; i<4; ++i)
+{
+
+
+    for (int j = 0; j < 13; j++)
+    {
+        (deck[card]).su = static_cast<CardSuit>(i);
+        (deck[card]).rk = static_cast<CardRank>(j);
+        ++card;
+    }
+
+
+
+}
+
+printDeck(deck);
 
 return 0;
 }
@@ -218,7 +233,17 @@ case Suit_Spade:   {cout << "S";break;}
 }
 
 
+void printDeck(const array<Card,52> &deck)
+{
 
+for (const auto &i:deck)
+{
+printCard(i);
+cout <<" ";
+}
+
+
+}
 
 
 
