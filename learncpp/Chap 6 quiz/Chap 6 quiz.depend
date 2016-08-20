@@ -9,12 +9,13 @@
 
 1470828017 c:\users\taimur\desktop\codeblocks\learncpp\chap 6 quiz\header.h
 
-1471544802 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/Chap 6 quiz/main.cpp
+1471708321 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/Chap 6 quiz/main.cpp
 	<iostream>
 	"header.h"
 	<string>
 	<utility>
 	<array>
+	<ctime>
 
-1470828017 /home/taihim/Documents/git/Code::blocks/Cpp/learncpp/Chap 6 quiz/header.h
+1471703318 /home/taihim/Documents/git/Code::blocks/Cpp/learncpp/Chap 6 quiz/header.h
 

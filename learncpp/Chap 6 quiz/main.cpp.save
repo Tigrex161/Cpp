@@ -400,7 +400,6 @@ cin  >> playerChoice;
     }
     cout << "Player draws" << endl;
     if (getCardValue(*ptr++) == 11 )
-    {cout << "Player draws an Ace";}
     cout << "Player score = " << playerScore << endl;
     }
     if(playerScore > 21 && dealtAce == 0)
