@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1476336830 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/ComplexNumberStruct/main.cpp
+	<iostream>
+	<cmath>
+
