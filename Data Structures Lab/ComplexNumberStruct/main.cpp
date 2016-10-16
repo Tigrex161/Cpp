@@ -54,13 +54,13 @@ void input()
 {
 cout << "Enter the numerator: ";
 cin >> num;
-cout << "Enter the denomintor: ";
+cout << "Enter the denominator: ";
 cin >> denom;
 }
 
-void multiply()
+void multiply(fraction b)
 {
- cout << "The product is: " << (static_cast<double>((num*num))) / (static_cast<double>((denom*denom)));
+ cout << "The product is: " << (static_cast<double>(((num*b.num)))) / (static_cast<double>((denom*(b.denom))));
 }
 };
 
@@ -71,20 +71,22 @@ void multiply()
 struct circle{
 
 float radius;
+float cf;
 
-void circum()
+float circum()
 {
-cout << radius*2*3.142;
+return radius*2*3.142;
 }
 
-void diameter()
+float diameter()
 {
-    cout << radius*2;
+    return (radius*2);
 }
 
-bool compare(circle a, circle b)
+bool compare(circle b)
 {
-if((circum(a))==(circum(b)))
+
+if(cf==(b.cf))
 return true;
 
 else
@@ -118,15 +120,16 @@ int main()
     a.input();
     b.input();
 
-(a,b).multiply();*/
+a.multiply(b);*/
 
 
 circle a;
 circle b;
-a.radius = 5;
-b.radius = 5;
-(a,b).compare();
-
+a.radius = 5.0;
+b.radius = 5.1;
+a.cf = a.circum();
+b.cf = b.circum();
+cout << a.compare(b);
 
 
 
