@@ -71,10 +71,11 @@ void multiply(fraction b)
 struct circle{
 
 float radius;
+float cf;
 
 float circum()
 {
-return (radius*2*3.142);
+return radius*2*3.142;
 }
 
 float diameter()
@@ -85,7 +86,7 @@ float diameter()
 bool compare(circle b)
 {
 
-if(==)
+if(cf==(b.cf))
 return true;
 
 else
@@ -125,8 +126,9 @@ a.multiply(b);*/
 circle a;
 circle b;
 a.radius = 5.0;
-b.radius = 5.0;
-a.circum();
+b.radius = 5.1;
+a.cf = a.circum();
+b.cf = b.circum();
 cout << a.compare(b);
 
 
