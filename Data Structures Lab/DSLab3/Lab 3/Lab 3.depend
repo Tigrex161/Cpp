@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1477545270 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/DSLab3/Lab 3/main.cpp
+	<iostream>
+	<cmath>
+

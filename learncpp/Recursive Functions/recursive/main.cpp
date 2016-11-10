@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+int factorial(int a)
+{
+    if(a==0)
+    return 0;
+
+    if(a==1)
+    return 1;
+
+    else
+    {
+
+        return (factorial(a-1))*a;
+
+    }
+
+
+
+
+
+}
+
+
+int sumAll(int b)
+{
+
+
+    if(b<10)
+    return b;
+
+    else
+    {
+     return (sumAll(b/10))+ b%10;
+
+    }
+
+
+}
+
+
+
+
+
+int main()
+{
+    //cout << factorial(7);
+
+    cout << sumAll(93427);
+
+
+
+    return 0;
+}
