@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1483592777 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Heap/main.cpp
+	<iostream>
+	<utility>
+
