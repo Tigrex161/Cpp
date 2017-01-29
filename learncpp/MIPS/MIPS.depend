@@ -1,4 +1,6 @@
 # depslib dependency file v1.0
-1483336247 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/MIPS/main.cpp
+1485147715 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/MIPS/main.cpp
 	<iostream>
+	<cmath>
+	<string>
 

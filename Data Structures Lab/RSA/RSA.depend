@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1485495677 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/RSA/main.cpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<random>
+	<ctime>
+	<utility>
+	<string>
+

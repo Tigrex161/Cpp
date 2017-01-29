@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1485696070 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/DS_Project_Final/main.cpp
+	<iostream>
+	<vector>
+	<string>
+
