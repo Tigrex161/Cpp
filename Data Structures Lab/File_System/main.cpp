@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-
 using namespace std;
-
 
 struct fileName{
 
@@ -13,7 +11,6 @@ string *fileData;
 };
 
 
-
 struct file{
 
 fileName name;
@@ -21,7 +18,6 @@ string *vacantBlocks;
 string inputData;
 
 };
-
 
 
 struct fileSystem
@@ -85,6 +81,12 @@ createFile << newFile.inputData;
 
 int displayFiles(int numFiles)
 {
+
+    if(numFiles == 0)
+    cout << "No files currently exist." << endl;
+
+    else
+    {
     cout << "Files: \n";
 
 for (int i = 0; i < numFiles; ++i)
@@ -118,12 +120,9 @@ if(matchFound == false)
 cout << "No such file exists." << endl;
 return 0;
 }
-
+}
 return 0;
 }
-
-
-
 
 
 
@@ -132,31 +131,30 @@ void addFile(int &numFiles)
     cout << "Enter the name of the file to copy: ";
     cin >> newFile.name.fileName;
 
-numFiles++;
-fileNames[numFiles] = newFile.name.fileName;
+    numFiles++;
+    fileNames[numFiles] = newFile.name.fileName;
 
-cin.clear();
-cin.ignore(32767,'\n');
+    cin.clear();
+    cin.ignore(32767,'\n');
 
-cout << "Enter the full path of the file to copy: " << endl;
-string path;
-getline(cin,path);
+    cout << "Enter the full path of the file to copy: " << endl;
+    string path;
+    getline(cin,path);
 
-ifstream input;
-input.open(path);
-if (!input) std::cerr << "Could not open the file!" << std::endl;
+    ifstream input;
+    input.open(path);
+    if (!input) std::cerr << "Could not open the file!" << std::endl;
 
-else
-{
-string content;
-getline(input, content);
-input.close();
-ofstream copied;
-copied.open(newFile.name.fileName);
-copied<<content;
-copied.close();
-}
-
+    else
+        {
+            string content;
+            getline(input, content);
+            input.close();
+            ofstream copied;
+            copied.open(newFile.name.fileName);
+            copied<<content;
+            copied.close();
+        }
 
 }
 
@@ -164,63 +162,56 @@ copied.close();
 
 void exportFile(int numFiles)
 {
-   string content;
-   bool matchFound = false;
-   cout << "Files: \n";
+    string content;
+    bool matchFound = false;
+    cout << "Files: \n";
 
-for (int i = 0; i < numFiles; ++i)
-{
-cout << fileNames[i] << endl;
-}
-
-
-do
-{cout << "Enter the name of the file you want to export: ";
-string n;
-cin >> n;
-
-
-for(int j = 0; j < numFiles; ++j)
-{
-    if(n == fileNames[j])
+    for (int i = 0; i < numFiles; ++i)
     {
-
-        ifstream output;
-        output.open(fileNames[j]);
-        getline(output, content);
-        output.close();
-        matchFound = true;
-        break;
+        cout << fileNames[i] << endl;
     }
 
-}
 
-if(matchFound == false)
-{
-cout << "No such file exists.";
-}
-}
+    do
+    {
+        cout << "Enter the name of the file you want to export: ";
+        string n;
+        cin >> n;
 
-while(matchFound == false);
+        for(int j = 0; j < numFiles; ++j)
+        {
+            if(n == fileNames[j])
+            {
+                ifstream output;
+                output.open(fileNames[j]);
+                getline(output, content);
+                output.close();
+                matchFound = true;
+                break;
+            }
 
-cin.clear();
+        }
+
+        if(matchFound == false)
+        {
+            cout << "No such file exists.";
+        }
+    }
+
+    while(matchFound == false);
+
+    cin.clear();
     cin.ignore(32767,'\n');
 
-cout << "Enter the full path where you would like to export the file: ";
-string path;
-getline(cin,path);
+    cout << "Enter the full path where you would like to export the file: ";
+    string path;
+    getline(cin,path);
 
-
-ofstream expor;
-expor.open(path);
-expor << content;
-expor.close();
-
-
+    ofstream expor;
+    expor.open(path);
+    expor << content;
+    expor.close();
 }
-
-
-
 
 
 
@@ -267,7 +258,7 @@ void del(int &numFiles)
 
 if(matchFound == false)
 {
-cout << "No such file exists.";
+cout << "No such file exists." << endl;
 }
 
 }
@@ -276,7 +267,6 @@ cout << "No such file exists.";
 
 void modify(int numFiles)
 {
-
 bool matchFound = false;
     string name;
     string line;
@@ -290,7 +280,6 @@ bool matchFound = false;
     {
 
         matchFound = true;
-
         ofstream mod;
         mod.open(name, ofstream::app);
         cout << "Enter the data that you want to add: " << endl;
@@ -300,18 +289,15 @@ bool matchFound = false;
     }
 
 }
+
 if(matchFound == false)
 {
 cout << "No such file exists.";
 }
 
-
-
 }
 
-
 };
-
 
 
 void readF(int &numFiles) //Reads number of files from a text file numFiles.txt
@@ -327,7 +313,6 @@ void readF(int &numFiles) //Reads number of files from a text file numFiles.txt
 }
 
 
-
 void writeF(int numFiles) //Writes new number of files to text file numFiles.txt
 {
     ofstream myfile;
@@ -336,23 +321,19 @@ void writeF(int numFiles) //Writes new number of files to text file numFiles.txt
 }
 
 
-
 void readArray(string *fileNames, int numFiles) //Reads the names of the files in the text file fileNames.txt
 {
     fstream myfile;
     myfile.open("fileNames.txt");
-    for(int i = 0; i < numFiles;++i)
 
+    for(int i = 0; i < numFiles;++i)
     {
         string name;
-
         getline(myfile,name,'\n');
-
         fileNames[i] = name;
 
     }
 }
-
 
 
 void writeArray(string *fileNames, int numFiles) //Writes the name of new files to fileNames.txt
@@ -363,10 +344,6 @@ void writeArray(string *fileNames, int numFiles) //Writes the name of new files 
     for(int i = numFiles; i <= numFiles; ++i)
     myfile << fileNames[i] << "\n";
 }
-
-
-
-
 
 
 int main()
@@ -384,9 +361,7 @@ int main()
     do{
 
     cout << "Welcome to this simple filesystem." << endl;
-
     cout << "You have 6 options to choose from. Enter:- " << endl;
-
     cout << "1 to create a new file" << endl << "2 to display all existing files" << endl << "3 to delete a file" << endl << "4 to copy an external file" << endl << "5 to export an existing file" << endl << "6 to modify an existing file" << endl;
     cin >> x;
     cin.clear();
@@ -406,7 +381,6 @@ int main()
     one.displayFiles(numFiles);
     }
 
-
     if(x == 3)
     {
     one.del(numFiles);
@@ -420,7 +394,6 @@ int main()
     writeF(numFiles);
     }
 
-
     if(x == 5)
     {
     one.exportFile(numFiles);
@@ -430,7 +403,6 @@ int main()
     {
     one.modify(numFiles);
     }
-
 
 cout << "Would you like to perform another action? Y/N ";
     cin >> a;
