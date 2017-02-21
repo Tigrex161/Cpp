@@ -1,0 +1,71 @@
+#include "rectangle.h"
+#include <iostream>
+#include <cassert>
+
+using namespace std;
+Rectangle::Rectangle()
+{
+    cout << "Length initialized with default value: " << length << endl;
+
+    cout << "Width initialized with default value: " << width << endl;
+}
+
+
+
+Rectangle::Rectangle(float x, float y)
+{
+    length = x;
+    cout << "Length initialized with value: " << x << endl;
+    width = y;
+    cout << "Width initialized with value: " << y << endl;
+}
+
+float Rectangle::area()
+{
+        cout << "The area of the rectangle is: " << length*width << endl;
+        return (length*width);
+}
+
+
+float Rectangle::perimeter()
+{
+        cout << "The perimeter of the rectangle is: " << (2*(length+width)) << endl;
+        return (2*(length+width));
+
+}
+
+
+void Rectangle::setLength(float a)
+{
+/*float a;
+cout << "Enter the new length: ";
+cin >> a;
+*/
+assert(a>0 && a<21);
+{
+length = a;
+}
+}
+
+void Rectangle::setWidth()
+{
+/*
+float b;
+cout << "Enter a new width: ";
+cin >> b;
+*/
+assert(b>0 && b<21);
+width = b;
+}
+
+const float& Rectangle::getLength()
+{
+cout << "The length is: " << length << endl;
+return length;
+}
+
+const float& Rectangle::getWidth()
+{
+cout << "The width is: " << width << endl;
+return width;
+}
