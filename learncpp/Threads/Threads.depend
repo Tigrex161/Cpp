@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1488094433 source:/home/taihim/Documents/git/Code::blocks/Cpp/learncpp/Threads/main.cpp
+	<iostream>
+	<thread>
+	<string>
+

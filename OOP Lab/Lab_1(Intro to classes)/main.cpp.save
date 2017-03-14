@@ -2,6 +2,7 @@
 #include "rectangle.h"
 #include "account.h"
 #include "rational.h"
+#include "complex.h"
 using namespace std;
 
 int main()
@@ -9,10 +10,12 @@ int main()
     //Rectangle one;
     //Account two;
 
-    Rational three;
-    rational four(3,4);
-    three.printDec();
-    three.printFrac();
-    three.add(four);
+    //Rational three(36,248);
+    //Rational four(54,215);
+    //four.subtract(three);
+    //four.printDec();
+    complex1 one;
+
+
     return 0;
 }

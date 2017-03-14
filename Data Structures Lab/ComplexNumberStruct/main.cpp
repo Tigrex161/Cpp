@@ -7,7 +7,6 @@ int real;
 int imag;
 };
 
-
 void input(complex1 &c)
 {
 cout << "Enter the real part: ";
@@ -21,12 +20,10 @@ void add(complex1 a,complex1 b)
     cout <<"The result is: "<< (a.real+b.real) << "+" << (a.imag+b.imag) << "i" << endl;
 }
 
-
 void mag(complex1 d)
 {
 cout <<"The magnitude is: " << sqrt((pow(d.real,2)+pow(d.imag,2))) << endl;
 }
-
 
 void multiply(complex1 a, complex1 b)
 {
@@ -36,15 +33,10 @@ void multiply(complex1 a, complex1 b)
    cout << "The product is: " << temp1.real << "+" << temp1.imag << "i"<< endl;
 }
 
-
 void display(complex1 a)
 {
     cout << "The complex number you entered is: " <<  a.real << "+" << a.imag << "i" << endl;
 }
-
-
-
-
 
 struct fraction
 {
@@ -63,10 +55,6 @@ void multiply(fraction b)
  cout << "The product is: " << (static_cast<double>(((num*b.num)))) / (static_cast<double>((denom*(b.denom))));
 }
 };
-
-
-
-
 
 struct circle{
 
@@ -97,10 +85,6 @@ return false;
 
 };
 
-
-
-
-
 int main()
 {
     /*complex1 a;
@@ -130,9 +114,6 @@ b.radius = 5.1;
 a.cf = a.circum();
 b.cf = b.circum();
 cout << a.compare(b);
-
-
-
 
     return 0;
 }

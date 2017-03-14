@@ -16,8 +16,14 @@ Rational::Rational(int n = 1, int d = 1)
 {
     numerator = n;
     denominator = d;
+
+    if(d==0)
+    {
+        cout << "Zero cannot be entered as the denominator. It has instead been initialized to 1." << endl;
+        denominator = 1;
+    }
     cout << "Initialized. ";
-printFrac();
+    printFrac();
 
 }
 
@@ -60,28 +66,43 @@ return maximum;
 
 void Rational::convertToLowestTerms(int &firstNum, int &secondNum)
 {
+
 int Low_Value, High_Value;
+bool convertedD,convertedN;
 
-if(firstNum > secondNum)
-{
-Low_Value = secondNum;
-High_Value = firstNum;
-}
-else
-{
-High_Value = secondNum;
-Low_Value = firstNum;
-}
+if(firstNum < 0) //If the numerator is negative, the function does not operate correctly
+                 //therefore it is multiplied by -1 to make it positive and then converted back to negative after the calculations are made.
+    {
+        firstNum *= -1;
+        convertedN = true;
+    }
 
-for(int i = Low_Value; i > 0;i--)
-{
-if((Low_Value % i == 0) && (High_Value % i == 0))
-{
-firstNum = firstNum/i;
-secondNum = secondNum/i;
-break;
-}
-}
+if(secondNum < 0) //If the numerator is negative, the function does not operate correctly
+                 //therefore it is multiplied by -1 to make it positive and then converted back to negative after the calculations are made.
+    {
+        secondNum *= -1;
+        convertedD = true;
+    }
+
+Low_Value = (firstNum > secondNum) ? secondNum : firstNum;
+
+High_Value = (firstNum > secondNum) ? firstNum  : secondNum;
+
+for(int i = Low_Value; i > 0; i--)
+    {
+    if((Low_Value % i == 0) && (High_Value % i == 0))
+        {
+            firstNum = firstNum/i;
+            secondNum = secondNum/i;
+
+            if(convertedN)
+            firstNum *= -1;
+
+            if(convertedD)
+            secondNum *= -1;
+            break;
+        }
+    }
 }
 
 
@@ -124,11 +145,7 @@ void Rational::add(Rational a)
         denominator = 0;
         }
 
-        if(numerator > denominator || numerator < denominator)
-        {
         convertToLowestTerms(numerator,denominator);
-        }
-
 }
 
 void Rational::subtract(Rational a)
@@ -170,11 +187,7 @@ void Rational::subtract(Rational a)
         denominator = 0;
         }
 
-        if(numerator > denominator || numerator < denominator)
-        {
         convertToLowestTerms(numerator,denominator);
-        }
-
 
 }
 
@@ -182,8 +195,8 @@ void Rational::subtract(Rational a)
 void Rational::multiply(Rational a)
 {
 
-        numerator *= a.numerator;
-        denominator *= a.denominator;
+        numerator = numerator * a.numerator;
+        denominator = denominator * a.denominator;
         convertToLowestTerms(numerator,denominator);
 
 }
@@ -191,9 +204,7 @@ void Rational::multiply(Rational a)
 
 void Rational::divide(Rational a)
 {
-
         numerator *= a.denominator;
         denominator *= a.numerator;
         convertToLowestTerms(numerator,denominator);
-
 }
