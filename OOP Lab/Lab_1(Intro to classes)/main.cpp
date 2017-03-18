@@ -7,15 +7,15 @@ using namespace std;
 
 int main()
 {
-    //Rectangle one;
-    //Account two;
+    Rectangle one;
+    Account two;
 
     Rational three(36,248);
     Rational four(54,215);
     four.subtract(three);
     four.printFrac();
-    //complex1 one(2,3);
-    //one.display();
+//    complex1 one(2,3);
+  //  one.display();
 
     return 0;
 }
