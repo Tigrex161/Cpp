@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1487700891 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/account.cpp
+
+1487702950 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/main.cpp
+	<iostream>
+	"rectangle.h"
+	"account.h"
+	"rational.h"
+
+1487702842 /home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/rectangle.h
+
+1487702509 /home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/account.h
+
+1487700854 /home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/rational.h
+
+1487700905 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/rational.cpp
+
+1487703027 source:/home/taihim/Documents/git/Code::blocks/Cpp/Data Structures Lab/Lab_1(Intro to classes)/rectangle.cpp
+	"rectangle.h"
+	<iostream>
+	<cassert>
+
+1487744765 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/account.cpp
+	<iostream>
+	"account.h"
+
+1487743536 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/main.cpp
+	<iostream>
+	"rectangle.h"
+	"account.h"
+	"rational.h"
+	"complex.h"
+
+1487703725 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/rectangle.h
+
+1487705554 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/account.h
+
+1487708725 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/rational.h
+
+1487740102 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/rational.cpp
+	<iostream>
+	"rational.h"
+
+1487703496 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/rectangle.cpp
+	"rectangle.h"
+	<iostream>
+	<cassert>
+
+1487743625 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/complex.cpp
+	<iostream>
+	<cmath>
+	"complex.h"
+
+1487743625 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_1(Intro to classes)/complex.h
+
+1489515847 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/account.cpp
+	<iostream>
+	"account.h"
+
+1489515847 /home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/account.h
+
+1489515847 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/complex.cpp
+	<iostream>
+	<cmath>
+	"complex.h"
+
+1489515847 /home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/complex.h
+
+1489516654 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/main.cpp
+	<iostream>
+	"rectangle.h"
+	"account.h"
+	"rational.h"
+	"complex.h"
+
+1489515847 /home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/rectangle.h
+
+1489515847 /home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/rational.h
+
+1489515847 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/rational.cpp
+	<iostream>
+	"rational.h"
+
+1489515847 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_1(Intro to classes)/rectangle.cpp
+	"rectangle.h"
+	<iostream>
+	<cassert>
+

@@ -1,0 +1,35 @@
+# depslib dependency file v1.0
+1489832287 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/main.cpp
+	<iostream>
+	"tollBooth.h"
+	"time.h"
+	"serial.h"
+	"polynomial.h"
+
+1489552723 /home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/tollBooth.h
+
+1489554697 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/tollBooth.cpp
+	<iostream>
+	"tollBooth.h"
+
+1489555928 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/time.cpp
+	<iostream>
+	"time.h"
+
+1489555226 /home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/time.h
+
+1489558894 /home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/serial.h
+
+1489558899 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/serial.cpp
+	<iostream>
+	"serial.h"
+
+1489834171 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/polynomial.cpp
+	<iostream>
+	"polynomial.h"
+	<vector>
+
+1489833058 /home/taihim/Stuff/Cpp/OOP Lab/Lab_03(Const and static)/polynomial.h
+	<vector>
+	<iostream>
+
