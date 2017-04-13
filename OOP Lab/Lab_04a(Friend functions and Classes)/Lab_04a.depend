@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1490163184 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_04a/main.cpp
+	<iostream>
+	"TV.h"
+	"Remote.h"
+
+1490163040 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_04a/TV.cpp
+	<iostream>
+	"TV.h"
+
+1490163106 source:/home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_04a/Remote.cpp
+	<iostream>
+	"Remote.h"
+	"TV.h"
+
+1490163137 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_04a/Remote.h
+	"TV.h"
+
+1490163023 /home/taihim/Documents/git/Code::blocks/Cpp/OOP Lab/Lab_04a/TV.h
+
