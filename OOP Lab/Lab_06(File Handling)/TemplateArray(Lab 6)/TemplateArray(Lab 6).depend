@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1491997447 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_06(File Handling)/TemplateArray(Lab 6)/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

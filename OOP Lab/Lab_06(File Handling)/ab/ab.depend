@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1491998915 source:/home/taihim/Stuff/Cpp/OOP Lab/Lab_06(File Handling)/ab/main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
